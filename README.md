@@ -1,4 +1,4 @@
-# # MSDS434 Module 8: sqs-experiment
+## MSDS434 Module 8: sqs-experiment
 
 A publisher/subscriber model demonstration using AWS SQS.
 
@@ -26,3 +26,19 @@ export SQS_QUEUE_NAME=module8-demo
 * Does the IAM user or role you are using have access to SQS and your queue in particular?
 
 ### Testing the queue
+
+A queue called `module8-demo` is created. The default settings were used with the exception of disabling encryption (my IAM user was granted access to this queue so this is probably not needed.) First step is to confirm the queue is established, empty and ready to accept messages.
+
+![Step 1](imgs/01_pre_test.png)
+
+The publisher/generator is run and three simple messages are sent.
+
+![Step 2](imgs/02_messages_sent.png)
+
+Confirmation that the messages are in the queue awaiting processing.
+
+![Step 3](imgs/03_enqueued.png)
+
+Running the subscriber/consumer processed the messages. It is important to note that, depending on the settings of your queue, order is not guaranteed. Our experiment deletes the messages once read using the `ReceiptHandle` value.
+
+![Step 4](imgs/04_consumed.png)
