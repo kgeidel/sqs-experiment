@@ -2,7 +2,7 @@
 
 A publisher/subscriber model demonstration using AWS SQS.
 
-I am in section 55 (Winter '25.) This is my term project. <br>
+I am in section 55 (Winter '25.) This is my week 8 demonstration. <br>
 Please visit my <img src="https://kstatic.googleusercontent.com/files/d57b24106c34c7e50ef3d98423b94ddaf35ad2da73a9b9d4d12f52dbb9dd4c08c2957f6255ab8690d5ef0b32cff8287e09577d05e479d263e872160c4c9e8363" height="20" width="20">[Google Drive Folder](https://drive.google.com/drive/folders/1so_fM2HcdTYzCYSuwtdbxBeXtx1CPN8J?usp=sharing) for the weekly demonstration videos.
 
 ### Replication
